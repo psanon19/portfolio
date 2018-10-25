@@ -1,0 +1,33 @@
+
+
+body{
+    background-image: url("../images/153978656651435566.jpeg");
+}
+
+.jumbotron {
+    border: medium solid whitesmoke;
+    background: url("../images/imageedit_1_4020611234.jpg");
+    color: white;
+}
+
+.Main{
+    background-color: white;
+    border: thin solid black;
+    background-size: cover;
+}
+
+.jumbotron a {
+    display: inline-block;
+
+    margin-left: 3px;
+}
+
+.footer {
+    border: medium solid red;
+    background: url("../images/imageedit_1_4020611234.jpg");
+    color: white;
+}
+
+.footer {
+    border: thin solid black;
+}

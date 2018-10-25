@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <title>Memphis Non-Profit</title>
+    <link rel="stylesheet" href="{% static 'forms_app/bootstrap/bootstrap.css' %}">
+    <script src="{% static 'forms_app/bootstrap/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'forms_app/bootstrap/bootstrap.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'forms_app/css/forms_app.css' %}"/>
+
+</head>
+<body>
+
+
+    <div class="container">
+
+        <header class="sticky-top">
+            <div class="jumbotron" align="center">
+                <h1><a href="{% url 'list' %}">My Online Portfolio</a></h1>
+                <b><a href="{% url 'add' %}" class="btn btn-link">About Me</a></b>
+                <b><a href="{% url 'add' %}" class="btn btn-link">My Resume</a></b>
+                <b><a href="{% url 'add' %}" class="btn btn-link">Resume</a></b>
+                <b><a href="{% url 'add' %}" class="btn btn-link">Reflection Statement</a></b>
+                <b><a href="{% url 'contact' %}" class="btn btn-link">Contact Me</a></b>
+            </div>
+        </header>
+
+        <div class="Main">
+            {% block info%}
+            {% endblock %}
+
+        </div>
+
+        <footer>
+            <div align="center" class="footer">
+                <b><i>NightxGamer</i></b>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

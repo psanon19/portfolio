@@ -1,0 +1,33 @@
+from django.db import models
+from datetime import datetime
+
+
+class FormModel(models.Model):
+    name = models.CharField(max_length=100)
+    address = models.CharField(max_length=500)
+    operating_budget = models.IntegerField(default=0)
+    description = models.TextField(null=True, max_length=500)
+    number_of_employees = models.IntegerField(default=0)
+    established_date = models.DateTimeField(default=datetime.now)
+    image_url = models.URLField(null=True, max_length=500)
+
+    def __str__(self):
+        return self.name
+
+
+class ContactMeModel(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField(max_length=500)
+    message = models.TextField(max_length=1000)
+
+    def __str__(self):
+        return self.name
+
+
+class ReflectionsModel(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField(max_length=500)
+    message = models.TextField(max_length=1000)
+
+    def __str__(self):
+        return self.name
