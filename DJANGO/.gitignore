@@ -1,3 +1,7 @@
 .idea/
 .DS_Store
 *.iml
+myprojectenv/
+forms_app/migrations/__pycache__/
+forms_project/__pycache__/
+*.pyc
