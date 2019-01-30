@@ -4,3 +4,4 @@ from .models import FormModel,ContactMeModel
 
 admin.site.register(FormModel)
 admin.site.register(ContactMeModel)
+
